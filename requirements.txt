@@ -1,0 +1,14 @@
+# Requirements for fix_cheated_runs.py
+# Install with: pip install -r requirements.txt
+
+# MySQL database connector (recommended official driver)
+mysql-connector-python>=8.0.0,<9.0.0
+
+# SSH tunnel support for remote database connections
+sshtunnel>=0.4.0
+# Pin paramiko to 2.x due to sshtunnel compatibility issue with paramiko 3.x
+paramiko>=2.7.0,<3.0.0
+
+# Testing dependencies (optional, only needed for running tests)
+pytest>=7.0.0
+pytest-cov>=4.0.0
